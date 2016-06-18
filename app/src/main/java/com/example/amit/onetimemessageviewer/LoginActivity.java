@@ -75,7 +75,8 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         sign_up.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent mIntent =  new Intent(LoginActivity.this,SignUpActivity.class);
+                startActivity(mIntent);
             }
         });
         populateAutoComplete();
